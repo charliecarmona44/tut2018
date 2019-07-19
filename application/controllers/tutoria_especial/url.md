@@ -1,0 +1,5 @@
+'/tutoria_especial', 'application.controllers.tutoria_especial.index.Index',
+'/tutoria_especial/view/(.+)', 'application.controllers.tutoria_especial.view.View',
+'/tutoria_especial/edit/(.+)', 'application.controllers.tutoria_especial.edit.Edit',
+'/tutoria_especial/delete/(.+)', 'application.controllers.tutoria_especial.delete.Delete',
+'/tutoria_especial/insert', 'application.controllers.tutoria_especial.insert.Insert',

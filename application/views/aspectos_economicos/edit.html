@@ -1,0 +1,84 @@
+$def with(aspectos_economicos, params, message)
+<h3>
+    <a href="/aspectos_economicos">Aspectos Economicos</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+    <br>
+<form action="" method="post" enctype="multipart/form-data">
+    <div class="form-group" style='display:none;'>
+    <input type="hidden" name="id_aspecto_economico" id="id_aspecto_economico" value="$aspectos_economicos.id_aspecto_economico" readonly="readonly"/>
+    </div>
+
+    <div class="form-group" style='display:none;'>
+    <label for="email">email</label>
+    <input required id="email" type="text" class="form-control" name="email" size="30" value="$aspectos_economicos.email"/>
+</div><div class="form-group">
+    <label for="beca">beca</label>
+    <input required id="beca" type="text" class="form-control" name="beca" size="30" value="$aspectos_economicos.beca"/>
+</div><div class="form-group">
+    <label for="nombre_beca">nombre de la beca</label>
+    <input required id="nombre_beca" type="text" class="form-control" name="nombre_beca" size="30" value="$aspectos_economicos.nombre_beca"/>
+</div><div class="form-group">
+    <label for="depende_economicamente">depende economicamente</label>
+    <input required id="depende_economicamente" type="text" class="form-control" name="depende_economicamente" size="30" value="$aspectos_economicos.depende_economicamente"/>
+</div><div class="form-group">
+    <label for="tiene_computadora">tiene computadora</label>
+    <input required id="tiene_computadora" type="text" class="form-control" name="tiene_computadora" size="30" value="$aspectos_economicos.tiene_computadora"/>
+</div><div class="form-group">
+    <label for="tiene_telefono">tiene telefono</label>
+    <input required id="tiene_telefono" type="text" class="form-control" name="tiene_telefono" size="30" value="$aspectos_economicos.tiene_telefono"/>
+</div><div class="form-group">
+    <label for="trabaja">trabaja</label>
+    <input required id="trabaja" type="text" class="form-control" name="trabaja" size="30" value="$aspectos_economicos.trabaja"/>
+</div><div class="form-group">
+    <label for="empresa">empresa</label>
+    <input required id="empresa" type="text" class="form-control" name="empresa" size="30" value="$aspectos_economicos.empresa"/>
+</div><div class="form-group">
+    <label for="jefe_inmediato">jefe inmediato</label>
+    <input required id="jefe_inmediato" type="text" class="form-control" name="jefe_inmediato" size="30" value="$aspectos_economicos.jefe_inmediato"/>
+</div><div class="form-group">
+    <label for="telefono_trabajo">telefono de trabajo</label>
+    <input required id="telefono_trabajo" type="text" class="form-control" name="telefono_trabajo" size="30" value="$aspectos_economicos.telefono_trabajo"/>
+</div><div class="form-group">
+    <label for="email_trabajo">email del trabajo</label>
+    <input required id="email_trabajo" type="text" class="form-control" name="email_trabajo" size="30" value="$aspectos_economicos.email_trabajo"/>
+</div><div class="form-group">
+    <label for="actividad">actividad</label>
+    <input required id="actividad" type="text" class="form-control" name="actividad" size="30" value="$aspectos_economicos.actividad"/>
+</div><div class="form-group">
+    <label for="jornada_laboral">jornada laboral</label>
+    <input required id="jornada_laboral" type="text" class="form-control" name="jornada_laboral" size="30" value="$aspectos_economicos.jornada_laboral"/>
+</div><div class="form-group">
+    <label for="calle">calle</label>
+    <input required id="calle" type="text" class="form-control" name="calle" size="30" value="$aspectos_economicos.calle"/>
+</div><div class="form-group">
+    <label for="colonia">colonia</label>
+    <input required id="colonia" type="text" class="form-control" name="colonia" size="30" value="$aspectos_economicos.colonia"/>
+</div><div class="form-group">
+    <label for="cp">cp</label>
+    <input required id="cp" type="text" class="form-control" name="cp" size="30" value="$aspectos_economicos.cp"/>
+</div><div class="form-group">
+    <label for="no_exterior">no exterior</label>
+    <input required id="no_exterior" type="text" class="form-control" name="no_exterior" size="30" value="$aspectos_economicos.no_exterior"/>
+</div><div class="form-group">
+    <label for="no_interior">no interior</label>
+    <input required id="no_interior" type="text" class="form-control" name="no_interior" size="30" value="$aspectos_economicos.no_interior"/>
+</div><div class="form-group">
+    <label for="municipio">municipio</label>
+    <input required id="municipio" type="text" class="form-control" name="municipio" size="30" value="$aspectos_economicos.municipio"/>
+</div><div class="form-group">
+    <label for="referencias">referencias</label>
+    <input required id="referencias" type="text" class="form-control" name="referencias" size="30" value="$aspectos_economicos.referencias"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

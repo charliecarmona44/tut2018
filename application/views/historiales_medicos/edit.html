@@ -1,0 +1,63 @@
+$def with(historiales_medicos,params,message)
+<h3>
+    <a href="/historiales_medicos">Información de Historiales Medicos</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+    <br>
+<form action="" method="post" enctype="multipart/form-data">
+    <div class="form-group" style='display:none;'>
+    <input readonly type="hidden" name="id_historial_medico" id="id_historial_medico" value="$historiales_medicos.id_historial_medico" readonly="readonly"/>
+    </div>
+<div class="form-group" style='display:none;'>
+    <label for="email">email</label>
+    <input required id="email" type="text" class="form-control" name="email" size="30" value="$historiales_medicos.email"/>
+</div>
+<div class="form-group">
+    <label for="imss">imss</label>
+    <input required id="imss" type="text" class="form-control" name="imss" size="30" value="$historiales_medicos.imss"/>
+</div><div class="form-group">
+    <label for="no_imss">no de registro al imss</label>
+    <input required id="no_imss" type="text" class="form-control" name="no_imss" size="30" value="$historiales_medicos.no_imss"/>
+</div><div class="form-group">
+    <label for="institucion_salud">institucion salud</label>
+    <input required id="institucion_salud" type="text" class="form-control" name="institucion_salud" size="30" value="$historiales_medicos.institucion_salud"/>
+</div><div class="form-group">
+    <label for="nombre_institucion_salud">nombre de la institucion de salud</label>
+    <input required id="nombre_institucion_salud" type="text" class="form-control" name="nombre_institucion_salud" size="30" value="$historiales_medicos.nombre_institucion_salud"/>
+</div><div class="form-group">
+    <label for="no_afiliacion_otra">no afiliacion otra</label>
+    <input required id="no_afiliacion_otra" type="text" class="form-control" name="no_afiliacion_otra" size="30" value="$historiales_medicos.no_afiliacion_otra"/>
+</div><div class="form-group">
+    <label for="tipo_sangre">tipo sangre</label>
+    <input required id="tipo_sangre" type="text" class="form-control" name="tipo_sangre" size="30" value="$historiales_medicos.tipo_sangre"/>
+</div><div class="form-group">
+    <label for="alergias">alergias</label>
+    <input required id="alergias" type="text" class="form-control" name="alergias" size="30" value="$historiales_medicos.alergias"/>
+</div><div class="form-group">
+    <label for="descripcion_alergias">descripcion de la alergias</label>
+    <input required id="descripcion_alergias" type="text" class="form-control" name="descripcion_alergias" size="30" value="$historiales_medicos.descripcion_alergias"/>
+</div><div class="form-group">
+    <label for="enfermedades">enfermedades</label>
+    <input required id="enfermedades" type="text" class="form-control" name="enfermedades" size="30" value="$historiales_medicos.enfermedades"/>
+</div><div class="form-group">
+    <label for="descripcion_enfermedad">descripcion de la enfermedad</label>
+    <input required id="descripcion_enfermedad" type="text" class="form-control" name="descripcion_enfermedad" size="30" value="$historiales_medicos.descripcion_enfermedad"/>
+</div><div class="form-group">
+    <label for="medicamentos">medicamentos</label>
+    <input required id="medicamentos" type="text" class="form-control" name="medicamentos" size="30" value="$historiales_medicos.medicamentos"/>
+</div><div class="form-group">
+    <label for="descripcion_medicamentos">descripcion de medicamentos</label>
+    <input required id="descripcion_medicamentos" type="text" class="form-control" name="descripcion_medicamentos" size="30" value="$historiales_medicos.descripcion_medicamentos"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

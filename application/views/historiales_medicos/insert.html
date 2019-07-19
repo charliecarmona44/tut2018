@@ -1,0 +1,98 @@
+$def with(email, message)
+<h3>
+    Historial médico
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+<form action="" method="post" enctype="multipart/form-data">
+
+    <div class="form-group">
+        <label>User</label>
+        <input readonly value="$email" id="email" type="text" class="form-control" name="email" size="30" readonly="readonly" />
+    </div>
+    <div class="form-group">
+        <label>¿Tiene IMSS?</label>
+        <select required id="imss" class="form-control" name="imss">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>No. afiliación IMSS</label>
+        <input required id="no_imss" type="number" class="form-control" name="no_imss" size="30" />
+    </div>
+    <div class="form-group">
+        <label>¿Esta inscrito en otra Institucion de Salud?</label>
+        <select required id="institucion_salud" class="form-control" name="institucion_salud">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>¿Cuál?</label>
+        <input required id="nombre_institucion_salud" type="text" class="form-control" name="nombre_institucion_salud" size="30"
+        />
+    </div>
+    <div class="form-group">
+        <label>No. de afiliacion</label>
+        <input required id="no_afiliacion_otra" type="number" class="form-control" name="no_afiliacion_otra" size="30" />
+    </div>
+
+    <div class="form-group">
+        <label>Tipo de sangre</label>
+    <select required id="tipo_sangre" class="form-control" name="tipo_sangre">
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>¿Tiene alérgias?</label>
+        <select required id="alergias" class="form-control" name="alergias">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+        </select>
+    </div>
+    <div class="form-group">
+            <label>Describa su alérgia</label>
+            <input required id="descripcion_alergias" type="text" class="form-control" name="descripcion_alergias" size="300" />
+        </div>
+    <div class="form-group">
+        <label>¿Tiene alguna enfermedad?</label>
+        <select required id="enfermedades" class="form-control" name="enfermedades">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Describa su enfermedad</label>
+        <input required id="descripcion_enfermedad" type="text" class="form-control" name="descripcion_enfermedad" size="300" />
+    </div>
+    <div class="form-group">
+        <label>¿Toma medicamentos?</label>
+        <select required id="medicamentos" class="form-control" name="medicamentos">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Describa los medicamentos que toma</label>
+        <input required id="descripcion_medicamentos" type="text" class="form-control" name="descripcion_medicamentos" size="30"
+        />
+    </div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-save"></span> 4/6 Guardar y Continuar</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

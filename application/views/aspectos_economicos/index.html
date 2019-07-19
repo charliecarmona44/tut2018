@@ -1,0 +1,20 @@
+$def with(id_aspecto_economico,params)
+$var privilege: $params['user']
+
+<h3>
+    <a href="/aspectos_economicos">Mis aspectos economicos</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th><li class='active'><a><img src="$params['picture']"  style="max-width:100px; margin-top: -7px;" class="img-circle" height="100px" width="103px"> </a></li> </th>
+        <th>Editar</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href='#'>$params['user'] Edita tus datos economicos</a></td>
+            <td><a href='/aspectos_economicos/edit/$id_aspecto_economico'><span class="glyphicon glyphicon-pencil"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

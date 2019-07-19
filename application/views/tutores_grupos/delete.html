@@ -1,0 +1,29 @@
+$def with(tutores_grupos, message)
+<h3>
+    <a href="/tutores_grupos">tutores_grupos</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+<br>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id_tutor_grupo" id="id_tutor_grupo" value="$tutores_grupos.id_tutor_grupo" />
+
+    <div class="form-group">
+    <label for="user">user</label>
+    <input readonly id="user" type="text" class="form-control" name="user" size="30" value="$tutores_grupos.user"/>
+</div><div class="form-group">
+    <label for="id_grupo">id_grupo</label>
+    <input readonly id="id_grupo" type="text" class="form-control" name="id_grupo" size="30" value="$tutores_grupos.id_grupo"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

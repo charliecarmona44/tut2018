@@ -1,0 +1,51 @@
+$def with(aspectos_personales, message)
+<h3>
+    <a href="/aspectos_personales">Mis Aspectos personales</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+    <br>
+<form action="" method="post" enctype="multipart/form-data">
+
+    <div class="form-group" style='display:none;'>
+    <input type="hidden" name="id_aspecto_personal" id="id_aspecto_personal" value="$aspectos_personales.id_aspecto_personal" readonly="readonly"/>
+    </div>
+    <div class="form-group" style='display:none;'>
+    <label for="email">email</label>
+    <input required id="email" type="text" class="form-control" name="email" size="30" value="$aspectos_personales.email"/>
+</div><div class="form-group">
+    <label for="estado_civil">estado civil</label>
+    <input required id="estado_civil" type="text" class="form-control" name="estado_civil" size="30" value="$aspectos_personales.estado_civil"/>
+</div><div class="form-group">
+    <label for="numero_hijos">numero de hijos</label>
+    <input required id="numero_hijos" type="text" class="form-control" name="numero_hijos" size="30" value="$aspectos_personales.numero_hijos"/>
+</div><div class="form-group">
+    <label for="quien_los_cuida">quien los cuida</label>
+    <input required id="quien_los_cuida" type="text" class="form-control" name="quien_los_cuida" size="30" value="$aspectos_personales.quien_los_cuida"/>
+</div><div class="form-group">
+    <label for="no_integrantes_familia">no integrantes familia</label>
+    <input required id="no_integrantes_familia" type="text" class="form-control" name="no_integrantes_familia" size="30" value="$aspectos_personales.no_integrantes_familia"/>
+</div><div class="form-group">
+    <label for="comunicacion_familiar">comunicacion familiar</label>
+    <input required id="comunicacion_familiar" type="text" class="form-control" name="comunicacion_familiar" size="30" value="$aspectos_personales.comunicacion_familiar"/>
+</div><div class="form-group">
+    <label for="responsable">responsable</label>
+    <input required id="responsable" type="text" class="form-control" name="responsable" size="30" value="$aspectos_personales.responsable"/>
+</div><div class="form-group">
+    <label for="respetuosa">respetuosa</label>
+    <input required id="respetuosa" type="text" class="form-control" name="respetuosa" size="30" value="$aspectos_personales.respetuosa"/>
+</div><div class="form-group">
+    <label for="trabajo_equipo">trabajo equipo</label>
+    <input required id="trabajo_equipo" type="text" class="form-control" name="trabajo_equipo" size="30" value="$aspectos_personales.trabajo_equipo"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

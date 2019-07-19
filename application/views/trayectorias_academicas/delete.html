@@ -1,0 +1,80 @@
+$def with(trayectorias_academicas, message)
+<h3>
+    <a href="/trayectorias_academicas">trayectorias_academicas</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+<br>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id_trayectoria_academica" id="id_trayectoria_academica" value="$trayectorias_academicas.id_trayectoria_academica" />
+
+    <div class="form-group">
+    <label for="email">email</label>
+    <input readonly id="email" type="text" class="form-control" name="email" size="30" value="$trayectorias_academicas.email"/>
+</div><div class="form-group">
+    <label for="primaria_institucion">primaria_institucion</label>
+    <input readonly id="primaria_institucion" type="text" class="form-control" name="primaria_institucion" size="30" value="$trayectorias_academicas.primaria_institucion"/>
+</div><div class="form-group">
+    <label for="primaria_promedio">primaria_promedio</label>
+    <input readonly id="primaria_promedio" type="text" class="form-control" name="primaria_promedio" size="30" value="$trayectorias_academicas.primaria_promedio"/>
+</div><div class="form-group">
+    <label for="secundaria_institucion">secundaria_institucion</label>
+    <input readonly id="secundaria_institucion" type="text" class="form-control" name="secundaria_institucion" size="30" value="$trayectorias_academicas.secundaria_institucion"/>
+</div><div class="form-group">
+    <label for="secundadria_promedio">secundadria_promedio</label>
+    <input readonly id="secundadria_promedio" type="text" class="form-control" name="secundadria_promedio" size="30" value="$trayectorias_academicas.secundadria_promedio"/>
+</div><div class="form-group">
+    <label for="bachillerato_institucion">bachillerato_institucion</label>
+    <input readonly id="bachillerato_institucion" type="text" class="form-control" name="bachillerato_institucion" size="30" value="$trayectorias_academicas.bachillerato_institucion"/>
+</div><div class="form-group">
+    <label for="bachillerato_promedio">bachillerato_promedio</label>
+    <input readonly id="bachillerato_promedio" type="text" class="form-control" name="bachillerato_promedio" size="30" value="$trayectorias_academicas.bachillerato_promedio"/>
+</div><div class="form-group">
+    <label for="tsu_institucion">tsu_institucion</label>
+    <input readonly id="tsu_institucion" type="text" class="form-control" name="tsu_institucion" size="30" value="$trayectorias_academicas.tsu_institucion"/>
+</div><div class="form-group">
+    <label for="tsu_promedio">tsu_promedio</label>
+    <input readonly id="tsu_promedio" type="text" class="form-control" name="tsu_promedio" size="30" value="$trayectorias_academicas.tsu_promedio"/>
+</div><div class="form-group">
+    <label for="cuatrimestre_promedio01">cuatrimestre_promedio01</label>
+    <input readonly id="cuatrimestre_promedio01" type="text" class="form-control" name="cuatrimestre_promedio01" size="30" value="$trayectorias_academicas.cuatrimestre_promedio01"/>
+</div><div class="form-group">
+    <label for="cuatrimestre_promedio02">cuatrimestre_promedio02</label>
+    <input readonly id="cuatrimestre_promedio02" type="text" class="form-control" name="cuatrimestre_promedio02" size="30" value="$trayectorias_academicas.cuatrimestre_promedio02"/>
+</div><div class="form-group">
+    <label for="cuatrimestre_promedio03">cuatrimestre_promedio03</label>
+    <input readonly id="cuatrimestre_promedio03" type="text" class="form-control" name="cuatrimestre_promedio03" size="30" value="$trayectorias_academicas.cuatrimestre_promedio03"/>
+</div><div class="form-group">
+    <label for="cuatrimestre_promedio04">cuatrimestre_promedio04</label>
+    <input readonly id="cuatrimestre_promedio04" type="text" class="form-control" name="cuatrimestre_promedio04" size="30" value="$trayectorias_academicas.cuatrimestre_promedio04"/>
+</div><div class="form-group">
+    <label for="cuatrimestre_promedio05">cuatrimestre_promedio05</label>
+    <input readonly id="cuatrimestre_promedio05" type="text" class="form-control" name="cuatrimestre_promedio05" size="30" value="$trayectorias_academicas.cuatrimestre_promedio05"/>
+</div><div class="form-group">
+    <label for="cuatrimestre_promedio06">cuatrimestre_promedio06</label>
+    <input readonly id="cuatrimestre_promedio06" type="text" class="form-control" name="cuatrimestre_promedio06" size="30" value="$trayectorias_academicas.cuatrimestre_promedio06"/>
+</div><div class="form-group">
+    <label for="cuatrimestre_promedio07">cuatrimestre_promedio07</label>
+    <input readonly id="cuatrimestre_promedio07" type="text" class="form-control" name="cuatrimestre_promedio07" size="30" value="$trayectorias_academicas.cuatrimestre_promedio07"/>
+</div><div class="form-group">
+    <label for="cuatrimestre_promedio08">cuatrimestre_promedio08</label>
+    <input readonly id="cuatrimestre_promedio08" type="text" class="form-control" name="cuatrimestre_promedio08" size="30" value="$trayectorias_academicas.cuatrimestre_promedio08"/>
+</div><div class="form-group">
+    <label for="cuatrimestre_promedio09">cuatrimestre_promedio09</label>
+    <input readonly id="cuatrimestre_promedio09" type="text" class="form-control" name="cuatrimestre_promedio09" size="30" value="$trayectorias_academicas.cuatrimestre_promedio09"/>
+</div><div class="form-group">
+    <label for="cuatrimestre_promedio10">cuatrimestre_promedio10</label>
+    <input readonly id="cuatrimestre_promedio10" type="text" class="form-control" name="cuatrimestre_promedio10" size="30" value="$trayectorias_academicas.cuatrimestre_promedio10"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

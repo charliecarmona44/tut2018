@@ -1,0 +1,52 @@
+$def with(alumno,user)
+<h3>
+    <a href="/observaciones_individuales">Observaciones individuales</a>
+</h3>
+<form action="" method="post" enctype="multipart/form-data">
+
+    <div class="form-group">
+        <label>Email</label>
+        <input readonly value=$alumno.email id="email" type="text" class="form-control" name="email" size="30" />
+    </div>
+    <div class="form-group">
+        <label>Nombre del alumno</label>
+        <input readonly value='$alumno.nombre $alumno.ap_paterno $alumno.ap_materno' id="nombre" type="text" class="form-control"
+            name="nombre" size="30" />
+    </div>
+    <div class="form-group">
+        <label>Profesor que lo reporta</label>
+        <input type="hidden" id="user" value="$user.user" name="user"/>
+        <input readonly id="profesor" value="$user.name" type="text" class="form-control" name="profesor" size="30"/>
+    </div>
+    <div class="form-group">
+        <label>Observaciones</label>
+        <textarea required id="observaciones" class="form-control" name="observaciones" rows="5" cols="30"></textarea>
+    </div>
+    <div class="form-group">
+        <label>Fecha de atención</label>
+        <input required id="fecha_atencion" placeholder="YYYY/MM/DD" type="date" class="form-control" name="fecha_atencion" size="30" />
+    </div>
+    <div class="form-group">
+        <label>Acciones</label>
+        <textarea required id="acciones" class="form-control" name="acciones" rows="5" cols="30"></textarea>
+    </div>
+    <div class="form-group">
+        <label>Resultados</label>
+        <textarea required id="resultados" class="form-control" name="resultados" rows="5" cols="30"></textarea>
+    </div>
+    <div class="form-group">
+        <label>Semáforo</label>
+        <select id="semaforo" name="semaforo" class="form-control">
+            <option value="verde">Verde</option>
+            <option value="amarillo">Amarillo</option>
+            <option value="rojo">Rojo</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-save"></span> Save</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

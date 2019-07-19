@@ -1,0 +1,83 @@
+$def with(aspectos_economicos, message)
+<h3>
+    <a href="/aspectos_economicos">aspectos_economicos</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+<br>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id_aspecto_economico" id="id_aspecto_economico" value="$aspectos_economicos.id_aspecto_economico" />
+
+    <div class="form-group">
+    <label for="email">email</label>
+    <input readonly id="email" type="text" class="form-control" name="email" size="30" value="$aspectos_economicos.email"/>
+</div><div class="form-group">
+    <label for="beca">beca</label>
+    <input readonly id="beca" type="text" class="form-control" name="beca" size="30" value="$aspectos_economicos.beca"/>
+</div><div class="form-group">
+    <label for="nombre_beca">nombre_beca</label>
+    <input readonly id="nombre_beca" type="text" class="form-control" name="nombre_beca" size="30" value="$aspectos_economicos.nombre_beca"/>
+</div><div class="form-group">
+    <label for="depende_economicamente">depende_economicamente</label>
+    <input readonly id="depende_economicamente" type="text" class="form-control" name="depende_economicamente" size="30" value="$aspectos_economicos.depende_economicamente"/>
+</div><div class="form-group">
+    <label for="tiene_computadora">tiene_computadora</label>
+    <input readonly id="tiene_computadora" type="text" class="form-control" name="tiene_computadora" size="30" value="$aspectos_economicos.tiene_computadora"/>
+</div><div class="form-group">
+    <label for="tiene_telefono">tiene_telefono</label>
+    <input readonly id="tiene_telefono" type="text" class="form-control" name="tiene_telefono" size="30" value="$aspectos_economicos.tiene_telefono"/>
+</div><div class="form-group">
+    <label for="trabaja">trabaja</label>
+    <input readonly id="trabaja" type="text" class="form-control" name="trabaja" size="30" value="$aspectos_economicos.trabaja"/>
+</div><div class="form-group">
+    <label for="empresa">empresa</label>
+    <input readonly id="empresa" type="text" class="form-control" name="empresa" size="30" value="$aspectos_economicos.empresa"/>
+</div><div class="form-group">
+    <label for="jefe_inmediato">jefe_inmediato</label>
+    <input readonly id="jefe_inmediato" type="text" class="form-control" name="jefe_inmediato" size="30" value="$aspectos_economicos.jefe_inmediato"/>
+</div><div class="form-group">
+    <label for="telefono_trabajo">telefono_trabajo</label>
+    <input readonly id="telefono_trabajo" type="text" class="form-control" name="telefono_trabajo" size="30" value="$aspectos_economicos.telefono_trabajo"/>
+</div><div class="form-group">
+    <label for="email_trabajo">email_trabajo</label>
+    <input readonly id="email_trabajo" type="text" class="form-control" name="email_trabajo" size="30" value="$aspectos_economicos.email_trabajo"/>
+</div><div class="form-group">
+    <label for="actividad">actividad</label>
+    <input readonly id="actividad" type="text" class="form-control" name="actividad" size="30" value="$aspectos_economicos.actividad"/>
+</div><div class="form-group">
+    <label for="jornada_laboral">jornada_laboral</label>
+    <input readonly id="jornada_laboral" type="text" class="form-control" name="jornada_laboral" size="30" value="$aspectos_economicos.jornada_laboral"/>
+</div><div class="form-group">
+    <label for="calle">calle</label>
+    <input readonly id="calle" type="text" class="form-control" name="calle" size="30" value="$aspectos_economicos.calle"/>
+</div><div class="form-group">
+    <label for="colonia">colonia</label>
+    <input readonly id="colonia" type="text" class="form-control" name="colonia" size="30" value="$aspectos_economicos.colonia"/>
+</div><div class="form-group">
+    <label for="cp">cp</label>
+    <input readonly id="cp" type="text" class="form-control" name="cp" size="30" value="$aspectos_economicos.cp"/>
+</div><div class="form-group">
+    <label for="no_exterior">no_exterior</label>
+    <input readonly id="no_exterior" type="text" class="form-control" name="no_exterior" size="30" value="$aspectos_economicos.no_exterior"/>
+</div><div class="form-group">
+    <label for="no_interior">no_interior</label>
+    <input readonly id="no_interior" type="text" class="form-control" name="no_interior" size="30" value="$aspectos_economicos.no_interior"/>
+</div><div class="form-group">
+    <label for="municipio">municipio</label>
+    <input readonly id="municipio" type="text" class="form-control" name="municipio" size="30" value="$aspectos_economicos.municipio"/>
+</div><div class="form-group">
+    <label for="referencias">referencias</label>
+    <input readonly id="referencias" type="text" class="form-control" name="referencias" size="30" value="$aspectos_economicos.referencias"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

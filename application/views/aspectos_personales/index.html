@@ -1,0 +1,25 @@
+$def with(id_aspecto_personal,params)
+$var privilege: $params['user']
+$var user: $params['user']
+$var privilege: $params['privilege']
+$var privilege: $params['picture']
+<br>
+<br>
+<h3>
+    <a href="/aspectos_personales">Mis aspectos personales</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+<thead>
+        <th><li class='active'><a  href="/"><img src="$params['picture']"  style="max-width:100px; margin-top: -7px;" class="img-circle" height="100px" width="103px"> </a></li> </th>
+        <th>Editar mis datos de perfil</th>
+    </thead>
+    <tbody>
+        
+        <tr>
+            <td><a>$params['user'] Edita tus datos personales</a></td>
+            <td><a href='/aspectos_personales/edit/$id_aspecto_personal'><span class="glyphicon glyphicon-pencil"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

@@ -1,0 +1,5 @@
+'/trayectorias_academicas', 'application.controllers.trayectorias_academicas.index.Index',
+'/trayectorias_academicas/view/(.+)', 'application.controllers.trayectorias_academicas.view.View',
+'/trayectorias_academicas/edit/(.+)', 'application.controllers.trayectorias_academicas.edit.Edit',
+'/trayectorias_academicas/delete/(.+)', 'application.controllers.trayectorias_academicas.delete.Delete',
+'/trayectorias_academicas/insert', 'application.controllers.trayectorias_academicas.insert.Insert',

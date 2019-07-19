@@ -1,0 +1,43 @@
+$def with(tutores, grupos, tutores_grupos, message)
+<h3>
+    <a href="/tutores_grupos">Tutores Grupos</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+<br>
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id_tutor_grupo" id="id_tutor_grupo" value="$tutores_grupos.id_tutor_grupo" />
+    <div class="form-group">
+        <label>Tutor</label>
+
+        <select required id="user" name="user" class="form-control">
+            $for i in tutores:
+                $if tutores_grupos.user == i.user:
+                    <option value="$i.user" selected>$i.name</option>
+                $else:
+                    <option value="$i.user">$i.name</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Grupo</label>
+
+        <select required id="id_grupo" name="id_grupo" class="form-control">
+                $for i in grupos:
+                    $if tutores_grupos.id_grupo == i.id_grupo:
+                        <option value="$i.id_grupo" selected>$i.grupo </option>
+                    $else:
+                        <option value="$i.id_grupo">$i.grupo </option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

@@ -1,0 +1,116 @@
+$def with(email,message)
+<h3>
+    Aspectos Económicos
+</h3>
+
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+<form action="" method="post" enctype="multipart/form-data">
+
+    <div class="form-group">
+        <label>User</label>
+        <input readonly value="$email" id="email" type="text" class="form-control" name="email" size="30" />
+    </div>
+    <div class="form-group">
+        <label>¿Tiene beca?</label>
+        <select required id="beca" class="form-control" name="beca">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+                <option value="en tramite">En tramite</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Nombre de la beca</label>
+        <input required id="nombre_beca" type="text" class="form-control" name="nombre_beca" size="30" />
+    </div>
+    <div class="form-group">
+        <label>¿Depende economicamente de alguien?</label>
+        <select required id="depende_economicamente" class="form-control" name="depende_economicamente">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>¿Tiene computadora?</label>
+        <select required id="tiene_computadora" class="form-control" name="tiene_computadora">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>¿Tiene teléfono?</label>
+        <select required id="tiene_telefono" class="form-control" name="tiene_telefono">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>¿Trabaja?</label>
+        <select required id="trabaja" class="form-control" name="trabaja">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Nombre de la empresa</label>
+        <input required id="empresa" type="text" class="form-control" name="empresa" size="30" />
+    </div>
+    <div class="form-group">
+        <label>Nombre del jefe inmediato</label>
+        <input required id="jefe_inmediato" type="text" class="form-control" name="jefe_inmediato" size="30" />
+    </div>
+    <div class="form-group">
+        <label>Teléfono del trabajo</label>
+        <input required id="telefono_trabajo" type="number" class="form-control" name="telefono_trabajo" size="30" />
+    </div>
+    <div class="form-group">
+        <label>Email de su jefe o trabajo</label>
+        <input required id="email_trabajo" type="email_trabajo" class="form-control" name="email_trabajo" size="30" />
+    </div>
+    <div class="form-group">
+        <label>¿Qué actividad que realiza?</label>
+        <input required id="actividad" type="text" class="form-control" name="actividad" size="200" />
+    </div>
+    <div class="form-group">
+        <label>¿Cuál es su jornada laboral?</label>
+        <input required id="jornada_laboral" type="text" class="form-control" name="jornada_laboral" size="200" />
+    </div>
+    <div class="form-group">
+        <label>Calle donde esta ubicada la empresa</label>
+        <input required id="calle" type="text" class="form-control" name="calle" size="30" />
+    </div>
+    <div class="form-group">
+        <label>Colonia donde esta ubicada la empresa</label>
+        <input required id="colonia" type="text" class="form-control" name="colonia" size="30" />
+    </div>
+    <div class="form-group">
+        <label>CP de la empresa</label>
+        <input required id="cp" type="number" class="form-control" name="cp" size="30" />
+    </div>
+    <div class="form-group">
+        <label>No. exterior de la empresa</label>
+        <input required id="no_exterior" type="number" class="form-control" name="no_exterior" size="30" />
+    </div>
+    <div class="form-group">
+        <label>No. interior de la empresa</label>
+        <input required id="no_interior" type="number" class="form-control" name="no_interior" size="30" />
+    </div>
+    <div class="form-group">
+        <label>Municipio donde esta ubicada la empresa</label>
+        <input required id="municipio" type="text" class="form-control" name="municipio" size="50" />
+    </div>
+    <div class="form-group">
+        <label>Referencias de la ubicación de la empresa</label>
+        <input required id="referencias" type="text" class="form-control" name="referencias" size="300" />
+    </div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-save"></span> 3/6 Guardar y continuar</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

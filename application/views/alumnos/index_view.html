@@ -1,0 +1,38 @@
+$def with(alumnos, params)
+$var user: $params['user']
+$var privilege: $params['privilege']
+<h3>
+    <a href="/alumnos">Alumnos</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>Alumno</th>
+        <th>Nombre</th>
+        <th>Grupo y periodo</th>
+        <th>Aspectos del alumno</th>
+        $if params['privilege'] == 0 or params['privilege'] == 1:
+            <th>Options</th>
+    </thead>
+    <tbody>
+        $for item in alumnos:
+        <tr>
+            <td><a href='/alumnos/view/$item.email'>$item.email.split('!')[0]</a></td>
+            <td><a href='/alumnos/view/$item.email'>$item.nombre</a></td>
+            <td><a href='/alumnos/view/$item.email'>$item.grupo</a></td>
+            <td>
+                <a href='/aspectos_personales/view/$item.email'><span class="glyphicon glyphicon-sunglasses"></span></a> 
+                <a href='/aspectos_economicos/view/$item.email'><span class="glyphicon glyphicon-usd"></span></a> 
+                <a href='/historiales_medicos/view/$item.email'><span class="glyphicon glyphicon-heart"></span></a> 
+                <a href='/trayectorias_academicas/view/$item.email'><span class="glyphicon glyphicon-education"></span></a>
+            </td>
+            $if params['privilege'] == 0 or params['privilege'] == 1:
+                <td><a href='/alumnos/edit/$item.email'><span class="glyphicon glyphicon-pencil"></span></a> 
+                <a href='/alumnos/delete/$item.email'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<center>
+ <img src="static/image/utec.jpg" width="411" height="212" align="middle"> 
+</center>
+<br>
+<br>

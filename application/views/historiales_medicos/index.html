@@ -1,0 +1,21 @@
+$def with(id_historial_medico,params)
+$var user: $params['user']
+$var privilege: $params['privilege']
+$var picture: $params['picture']
+<h3>
+    <a href="/historiales_medicos">Mi historial medico</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th><li class='active'><a><img src="$params['picture']"  style="max-width:100px; margin-top: -7px;" class="img-circle" height="100px" width="103px"> </a></li> </th>
+        <th>Editar</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a>$params['user'] Edita tu historial medico</a></td>
+            <td><a href='/historiales_medicos/edit/$id_historial_medico'><span class="glyphicon glyphicon-pencil"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

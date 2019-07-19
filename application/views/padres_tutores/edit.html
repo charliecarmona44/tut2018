@@ -1,0 +1,71 @@
+$def with(padres_tutores,params,message)
+<h3>
+    <a href="/padres_tutores">Informacion de padres tutores</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+    <br>
+<form action="" method="post" enctype="multipart/form-data">
+    <div class="form-group" style='display:none;'>
+    <input readonly type="hidden" name="id_padre_tutor" id="id_padre_tutor" value="$padres_tutores.id_padre_tutor" readonly="readonly"/>
+    </div>
+    <div class="form-group" style='display:none;'>
+    <label for="email">email</label>
+    <input required id="email" type="text" class="form-control" name="email" size="30" value="$padres_tutores.email"/>
+</div><div class="form-group">
+    <label for="nombre">nombre</label>
+    <input required id="nombre" type="text" class="form-control" name="nombre" size="30" value="$padres_tutores.nombre"/>
+</div><div class="form-group">
+    <label for="ap_paterno">ap paterno</label>
+    <input required id="ap_paterno" type="text" class="form-control" name="ap_paterno" size="30" value="$padres_tutores.ap_paterno"/>
+</div><div class="form-group">
+    <label for="ap_materno">ap materno</label>
+    <input required id="ap_materno" type="text" class="form-control" name="ap_materno" size="30" value="$padres_tutores.ap_materno"/>
+</div><div class="form-group">
+    <label for="parentesco">parentesco</label>
+    <input required id="parentesco" type="text" class="form-control" name="parentesco" size="30" value="$padres_tutores.parentesco"/>
+</div><div class="form-group">
+    <label for="telefono_celular">telefono celular</label>
+    <input required id="telefono_celular" type="text" class="form-control" name="telefono_celular" size="30" value="$padres_tutores.telefono_celular"/>
+</div><div class="form-group">
+    <label for="telefono_casa">telefono casa</label>
+    <input required id="telefono_casa" type="text" class="form-control" name="telefono_casa" size="30" value="$padres_tutores.telefono_casa"/>
+</div><div class="form-group">
+    <label for="telefono_trabajo">telefono trabajo</label>
+    <input required id="telefono_trabajo" type="text" class="form-control" name="telefono_trabajo" size="30" value="$padres_tutores.telefono_trabajo"/>
+</div><div class="form-group">
+    <label for="email_tutor">email tutor</label>
+    <input required id="email_tutor" type="text" class="form-control" name="email_tutor" size="30" value="$padres_tutores.email_tutor"/>
+</div><div class="form-group">
+    <label for="calle">calle</label>
+    <input required id="calle" type="text" class="form-control" name="calle" size="30" value="$padres_tutores.calle"/>
+</div><div class="form-group">
+    <label for="colonia">colonia</label>
+    <input required id="colonia" type="text" class="form-control" name="colonia" size="30" value="$padres_tutores.colonia"/>
+</div><div class="form-group">
+    <label for="cp">cp</label>
+    <input required id="cp" type="text" class="form-control" name="cp" size="30" value="$padres_tutores.cp"/>
+</div><div class="form-group">
+    <label for="no_exterior">no exterior</label>
+    <input required id="no_exterior" type="text" class="form-control" name="no_exterior" size="30" value="$padres_tutores.no_exterior"/>
+</div><div class="form-group">
+    <label for="no_interior">no interior</label>
+    <input required id="no_interior" type="text" class="form-control" name="no_interior" size="30" value="$padres_tutores.no_interior"/>
+</div><div class="form-group">
+    <label for="municipio">municipio</label>
+    <input required id="municipio" type="text" class="form-control" name="municipio" size="30" value="$padres_tutores.municipio"/>
+</div><div class="form-group">
+    <label for="referencias">referencias</label>
+    <input required id="referencias" type="text" class="form-control" name="referencias" size="30" value="$padres_tutores.referencias"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

@@ -1,0 +1,83 @@
+$def with(email, message)
+<h3>
+    <a href="/aspectos_personales">Registro de Aspectos Personales</a>
+</h3>
+
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+
+<form action="" method="post" enctype="multipart/form-data">
+
+    <div class="form-group">
+    <label for="email">email</label>
+    <input required id="email" value="$email" type="text" class="form-control" name="email" size="30" readonly="readonly"/>
+</div>
+
+<div class="form-group">
+        <label>Estado civíl</label>
+        <select required id="estado_civil" class="form-control" name="estado_civil">
+            <option value="soltero">Soltero</option>
+            <option value="casado">Casado</option>
+            <option value="viudo">Viudo</option>
+            <option value="en proceso de divorcio">En proceso de divorcio</option>
+            <option value="divorciado">Divorciado</option>
+            <option value="unión libre">Unión libre</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Número de hijos</label>
+        <input required id="numero_hijos" type="number" class="form-control" name="numero_hijos" size="30" />
+    </div>
+    <div class="form-group">
+        <label>¿Quien los cuida?</label>
+        <select required id="quien_los_cuida" class="form-control" name="quien_los_cuida">
+                <option value="na">No aplica</option>
+                <option value="papas">Algúno de mis papás</option>
+                <option value="familiar">Un familiar</option>
+                <option value="vecino">Un vecino</option>
+                <option value="amigo">Un amigo</option>
+                <option value="guarderia">Una guardería</option>
+            </select>
+    </div>
+    <div class="form-group">
+        <label>¿Cuantas personas integran tu familia?</label>
+        <input required id="no_integrantes_familia" type="number" class="form-control" name="no_integrantes_familia" size="30" />
+    </div>
+    <div class="form-group">
+        <label>¿Hay buena comunicación familiar?</label>
+        <select required id="comunicacion_familiar" class="form-control" name="comunicacion_familiar">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>¿Te consideras una persona responsable?</label>
+        <select required id="responsable" class="form-control" name="responsable">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>¿Te consideras una persona respetuosa?</label>
+        <select required id="respetuosa" class="form-control" name="respetuosa">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>¿Te gusta trabajar en equipo?</label>
+        <select required id="trabajo_equipo" class="form-control" name="trabajo_equipo">
+                <option value="si">Si</option>
+                <option value="no">No</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-save"></span> 2/6 Guardar y continuar</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

@@ -1,0 +1,5 @@
+'/tutores_grupos', 'application.controllers.tutores_grupos.index.Index',
+'/tutores_grupos/view/(.+)', 'application.controllers.tutores_grupos.view.View',
+'/tutores_grupos/edit/(.+)', 'application.controllers.tutores_grupos.edit.Edit',
+'/tutores_grupos/delete/(.+)', 'application.controllers.tutores_grupos.delete.Delete',
+'/tutores_grupos/insert', 'application.controllers.tutores_grupos.insert.Insert',

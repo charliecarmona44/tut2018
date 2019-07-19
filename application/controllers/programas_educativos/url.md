@@ -1,0 +1,5 @@
+'/programas_educativos', 'application.controllers.programas_educativos.index.Index',
+'/programas_educativos/view/(.+)', 'application.controllers.programas_educativos.view.View',
+'/programas_educativos/edit/(.+)', 'application.controllers.programas_educativos.edit.Edit',
+'/programas_educativos/delete/(.+)', 'application.controllers.programas_educativos.delete.Delete',
+'/programas_educativos/insert', 'application.controllers.programas_educativos.insert.Insert',

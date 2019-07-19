@@ -1,0 +1,21 @@
+$def with(programas_educativos)
+<h3>
+    <a href="/programas_educativos">programas educativos</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>programas_educativos</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        $for item in programas_educativos:
+        <tr>
+            <td><a href='/programas_educativos/view/$item.id_programa_educativo'>$item.programa</a></td>
+            <td><a href='/programas_educativos/edit/$item.id_programa_educativo'><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href='/programas_educativos/delete/$item.id_programa_educativo'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

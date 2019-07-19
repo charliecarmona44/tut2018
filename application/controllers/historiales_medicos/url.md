@@ -1,0 +1,5 @@
+'/historiales_medicos', 'application.controllers.historiales_medicos.index.Index',
+'/historiales_medicos/view/(.+)', 'application.controllers.historiales_medicos.view.View',
+'/historiales_medicos/edit/(.+)', 'application.controllers.historiales_medicos.edit.Edit',
+'/historiales_medicos/delete/(.+)', 'application.controllers.historiales_medicos.delete.Delete',
+'/historiales_medicos/insert', 'application.controllers.historiales_medicos.insert.Insert',

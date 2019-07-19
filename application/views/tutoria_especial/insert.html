@@ -1,0 +1,71 @@
+$def with(programas_educativos,grupos,users,alumnos,area)
+
+<h3>
+    <a href="/tutoria_especial">tutoria_especial</a>
+</h3>
+<form action="" method="post" enctype="multipart/form-data">
+
+<div class="form-group">
+     <label>Area de atencion</label>
+     <select name="id_area_atencion" class="form-control">
+            $for item in area:
+                 <option value=$item.id_area_atencion>$item.area</option>
+     </select>
+</div> 
+
+<div class="form-group">
+     <label>Alumnos</label>
+     <select name="email" class="form-control">
+            $for item in alumnos:
+                 <option value=$item.email>$item.matricula</option>
+     </select>
+</div>
+
+<div class="form-group">
+     <label>Responzable de tutoria</label>
+     <select name="user" class="form-control">
+            $for item in users:
+                 <option value=$item.email>$item.user</option>
+     </select>
+</div>
+
+<div class="form-group">
+     <label>Grupo</label>
+     <select name="id_grupo" class="form-control">
+            $for item in grupos:
+                 <option value=$item.id_grupo>$item.grupo</option>
+     </select>
+</div>
+
+<div class="form-group">
+     <label>Carrera</label>
+     <select name="id_programa_educativo" class="form-control">
+            $for item in programas_educativos:
+                 <option value=$item.id_programa_educativo>$item.programa</option>
+     </select>
+</div>
+
+<div class="form-group">
+    <label for="fecha">fecha</label>
+    <input required id="fecha" type="text" class="form-control" name="fecha" size="30"/>
+</div><div class="form-group">
+    <label for="motivo_tutoria">motivo de tutoria</label>
+    <input required id="motivo_tutoria" type="text" class="form-control" name="motivo_tutoria" size="30"/>
+</div><div class="form-group">
+    <label for="acciones">acciones</label>
+    <input required id="acciones" type="text" class="form-control" name="acciones" size="30"/>
+</div><div class="form-group">
+    <label for="resolucion_tutoria">resolucion de la tutoria</label>
+    <input required id="resolucion_tutoria" type="text" class="form-control" name="resolucion_tutoria" size="30"/>
+</div><div class="form-group">
+    <label for="nota">nota</label>
+    <input required id="nota" type="text" class="form-control" name="nota" size="30"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-save"></span> Save</button>
+    </div>
+</form>
+<br>
+<br>

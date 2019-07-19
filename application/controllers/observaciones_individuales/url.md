@@ -1,0 +1,5 @@
+'/observaciones_individuales', 'application.controllers.observaciones_individuales.index.Index',
+'/observaciones_individuales/view/(.+)', 'application.controllers.observaciones_individuales.view.View',
+'/observaciones_individuales/edit/(.+)', 'application.controllers.observaciones_individuales.edit.Edit',
+'/observaciones_individuales/delete/(.+)', 'application.controllers.observaciones_individuales.delete.Delete',
+'/observaciones_individuales/insert', 'application.controllers.observaciones_individuales.insert.Insert',

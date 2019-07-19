@@ -1,0 +1,52 @@
+$def with(tutoria_especial, message)
+<h3>
+    <a href="/tutoria_especial">tutoria especial</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+    <br>
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id_tutoria_especial" id="id_tutoria_especial" value="$tutoria_especial.id_tutoria_especial" />
+
+    <div class="form-group">
+    <label for="id_area_atencion">id area atencion</label>
+    <input required id="id_area_atencion" type="text" class="form-control" name="id_area_atencion" size="30" value="$tutoria_especial.id_area_atencion"/>
+</div><div class="form-group">
+    <label for="email">email</label>
+    <input required id="email" type="text" class="form-control" name="email" size="30" value="$tutoria_especial.email"/>
+</div><div class="form-group">
+    <label for="user">user</label>
+    <input required id="user" type="text" class="form-control" name="user" size="30" value="$tutoria_especial.user"/>
+</div><div class="form-group">
+    <label for="id_grupo">id_grupo</label>
+    <input required id="id_grupo" type="text" class="form-control" name="id_grupo" size="30" value="$tutoria_especial.id_grupo"/>
+</div><div class="form-group">
+    <label for="id_programa_educativo">id_programa_educativo</label>
+    <input required id="id_programa_educativo" type="text" class="form-control" name="id_programa_educativo" size="30" value="$tutoria_especial.id_programa_educativo"/>
+</div><div class="form-group">
+    <label for="fecha">fecha</label>
+    <input required id="fecha" type="text" class="form-control" name="fecha" size="30" value="$tutoria_especial.fecha"/>
+</div><div class="form-group">
+    <label for="motivo_tutoria">motivo de tutoria</label>
+    <input required id="motivo_tutoria" type="text" class="form-control" name="motivo_tutoria" size="30" value="$tutoria_especial.motivo_tutoria"/>
+</div><div class="form-group">
+    <label for="acciones">acciones</label>
+    <input required id="acciones" type="text" class="form-control" name="acciones" size="30" value="$tutoria_especial.acciones"/>
+</div><div class="form-group">
+    <label for="resolucion_tutoria">resolucion de tutoria</label>
+    <input required id="resolucion_tutoria" type="text" class="form-control" name="resolucion_tutoria" size="30" value="$tutoria_especial.resolucion_tutoria"/>
+</div><div class="form-group">
+    <label for="nota">nota</label>
+    <input required id="nota" type="text" class="form-control" name="nota" size="30" value="$tutoria_especial.nota"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

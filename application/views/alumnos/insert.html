@@ -1,0 +1,226 @@
+$def with(message)
+<h3> 
+    <center>
+    <a href="#">Alumno registra tus datos por favor </a>
+    </center>
+</h3>
+
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+    
+<form action="" method="post" enctype="multipart/form-data">
+
+<div class="form-group">
+    <label for="fecha_alta">Fecha de ingreso a la institución</label>
+    <input required id="fecha_alta" type="date" class="form-control" name="fecha_alta" size="30"/>
+</div><div class="form-group">
+    <label for="nombre">Nombre</label>
+    <input required id="nombre" type="text" class="form-control" name="nombre" size="30"/>
+</div><div class="form-group">
+    <label for="ap_paterno">Apellido paterno</label>
+    <input required id="ap_paterno" type="text" class="form-control" name="ap_paterno" size="30"/>
+</div><div class="form-group">
+    <label for="ap_materno">Appellido materno</label>
+    <input required id="ap_materno" type="text" class="form-control" name="ap_materno" size="30"/>
+</div><div class="form-group">
+    <label for="fecha_nacimiento">Fecha nacimiento</label>
+    <input required id="fecha_nacimiento" type="date" class="form-control" name="fecha_nacimiento" size="30"/>
+</div><div class="form-group">
+    <label for="curp">curp</label>
+    <input required id="curp" type="text" class="form-control" name="curp" size="30"/>
+</div>
+<div class="form-group">
+      <label>Cuatrimestre</label>
+      <select name="cuatrimestre" class="form-control">
+      <option>0</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+      <option required id="cuatrimestre" name="cuatrimestre">11</option>
+
+</select>
+</div>
+<div class="form-group">
+    <label for="telefono_celular">Telefono celular</label>
+    <input required id="telefono_celular" type="text" class="form-control" name="telefono_celular" size="30"/>
+</div><div class="form-group">
+    <label for="telefono_casa">Telefono casa</label>
+    <input required id="telefono_casa" type="text" class="form-control" name="telefono_casa" size="30"/>
+</div><div class="form-group">
+<div class="form-group">
+        <label>Email personal</label>
+        <input required id="email_personal" type="email" class="form-control" name="email_personal" size="30" />
+    </div>
+    <label for="calle">Calle</label>
+    <input required id="calle" type="text" class="form-control" name="calle" size="30"/>
+</div><div class="form-group">
+    <label for="colonia">Colonia</label>
+    <input required id="colonia" type="text" class="form-control" name="colonia" size="30"/>
+</div><div class="form-group">
+    <label for="cp">cp</label>
+    <input required id="cp" type="text" class="form-control" name="cp" size="30"/>
+</div><div class="form-group">
+    <label for="no_exterior">No exterior</label>
+    <input required id="no_exterior" type="text" class="form-control" name="no_exterior" size="30"/>
+</div><div class="form-group">
+    <label for="no_interior">No interior</label>
+    <input required id="no_interior" type="text" class="form-control" name="no_interior" size="30"/>
+
+
+<div class="form-group">
+ <label for="municipio">Municipio</label>
+<select name="municipio" class="form-control">
+<option>Tulancingo de Bravo</option>
+<option>Pachuca de Soto</option>
+<option>Mineral de la Reforma</option>
+<option>Huejutla de Reyes</option>
+<option>Tizayuca</option>
+<option>Tula de Allende</option>
+<option>Ixmiquilpan</option>
+<option>Tepeji del Río de Ocampo</option>
+<option>Cuautepec de Hinojosa</option>
+<option>Actopan</option>
+<option>Tepeapulco</option>
+<option>Tezontepec de Aldama</option>
+<option>Mixquiahuala de Juárez</option>
+<option>Huichapan</option>
+<option>Zempoala</option>
+<option>Apan</option>
+<option>Acaxochitlán</option>
+<option>Zimapán</option>
+<option>Tlanchinol</option>
+<option>San Felipe Orizatlán</option>
+<option>Atotonilco de Tula</option>
+<option>Tecozautla</option>
+<option>Santiago Tulantepec de Lugo Guerrero</option>
+<option>San Agustín Tlaxiaca</option>
+<option>Francisco I. Madero</option>
+<option>San Salvador</option>
+<option>Zacualtipán de Ángeles</option>
+<option>Tepehuacán de Guerrero</option>
+<option>Atitalaquia</option>
+<option>Tlaxcoapan</option>
+<option>Atotonilco el Grande</option>
+<option>Huehuetla</option>
+<option>Yahualica</option>
+<option>Chapulhuacán</option>
+<option>Progreso de Obregón</option>
+<option>Huautla</option>
+<option>Acatlán</option>
+<option>Alfajayucan</option>
+<option>Metztitlán</option>
+<option>Atlapexco</option>
+<option>Xochiatipan</option>
+<option>Tlahuelilpan</option>
+<option>San Bartolo Tutotepec</option>
+<option>El Arenal</option>
+<option>Tenango de Doria</option>
+<option>Zapotlán de Juárez</option>
+<option>Cardonal</option>
+<option>Ajacuba</option>
+<option>Chilcuautla</option>
+<option>Huasca de Ocampo</option>
+<option>Pisaflores</option>
+<option>Calnali</option>
+<option>Santiago de Anaya</option>
+<option>Nopala de Villagrán</option>
+<option>Tolcayuca</option>
+<option>Tasquillo</option>
+<option>Singuilucan</option>
+<option>Tianguistengo</option>
+<option>Emiliano Zapata</option>
+<option>Epazoyucan</option>
+<option>Mineral del Monte</option>
+<option>Huazalingo</option>
+<option>Chapantongo</option>
+<option>Jacala de Ledezma</option>
+<option>Villa de Tezontepec</option>
+<option>Almoloya</option>
+<option>Jaltocán</option>
+<option>Metepec</option>
+<option>Tetepango</option>
+<option>Molango de Escamilla</option>
+<option>Tepetitlán</option>
+<option>Tlahuiltepa</option>
+<option>Tlanalapa</option>
+<option>La Misión</option>
+<option>Omitlán de Juárez</option>
+<option>Lolotla</option>
+<option>San Agustín Metzquititlán</option>
+<option>Agua Blanca de Iturbide</option>
+<option>Mineral del Chico</option>
+<option>Xochicoatlán</option>
+<option>Nicolás Flores</option>
+<option>Pacula</option>
+<option>Juárez Hidalgo</option>
+<option>Eloxochitlán</option>
+<option required id="municipio" name="municipio">Otro</option>
+ </select>
+</div>
+
+<div class="form-group">
+    <label for="referencias">Referencias</label>
+    <input required id="referencias" type="text" class="form-control" name="referencias" size="30"/>
+
+<div class="form-group">
+      <label>Idioma principal</label>
+      <select name="idioma_principal" class="form-control">
+      <option>Náuatl</option>
+      <option>Maya</option>
+      <option>Mixteco</option>
+      <option>Tzeltal</option>
+      <option>Zapoteco</option>
+      <option>Tzotzil</option>
+      <option>Otomi</option>
+      <option>Totonaca</option>
+      <option>Mazateco</option>
+      <option>Chol</option>
+      <option>Español</option>
+      <option>Inglés</option>
+      <option>Francés</option>
+      <option>Italiano</option>
+      <option>Chino</option>
+      <option>Otro</option>
+      <option required id="idioma_principal" name="idioma_principal">Alemán</option>
+      </select>
+</div>
+
+<div class="form-group">
+      <label>Segundo idioma</label>
+      <select name="segundo_idioma" class="form-control">
+      <option>Español</option>
+      <option>Inglés</option>
+      <option>Francés</option>
+      <option>Italiano</option>
+      <option>Chino</option>
+      <option>Náuatl</option>
+      <option>Maya</option>
+      <option>Mixteco</option>
+      <option>Tzeltal</option>
+      <option>Zapoteco</option>
+      <option>Tzotzil</option>
+      <option>Otomi</option>
+      <option>Totonaca</option>
+      <option>Mazateco</option>
+      <option>Chol</option>
+      <option>Otro</option>
+      <option required id="segundo_idioma" name="segundo_idioma">Alemán</option>
+      </select>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-save"></span> Guardar</button>
+    </div>
+</form>
+<br>
+<br>

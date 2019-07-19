@@ -1,0 +1,21 @@
+$def with(area_atencion)
+<h3>
+    <a href="/area_atencion">area de atencion</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>areas de atención</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        $for item in area_atencion:
+        <tr>
+            <td><a href='/area_atencion/view/$item.id_area_atencion'>Area: $item.area || Descripción: $item.descripcion</a></td>
+            <td><a href='/area_atencion/edit/$item.id_area_atencion'><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href='/area_atencion/delete/$item.id_area_atencion'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

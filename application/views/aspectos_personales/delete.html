@@ -1,0 +1,50 @@
+$def with(aspectos_personales, message)
+<h3>
+    <a href="/aspectos_personales">aspectos_personales</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+<br>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id_aspecto_personal" id="id_aspecto_personal" value="$aspectos_personales.id_aspecto_personal" />
+
+    <div class="form-group">
+    <label for="email">email</label>
+    <input readonly id="email" type="text" class="form-control" name="email" size="30" value="$aspectos_personales.email"/>
+</div><div class="form-group">
+    <label for="estado_civil">estado_civil</label>
+    <input readonly id="estado_civil" type="text" class="form-control" name="estado_civil" size="30" value="$aspectos_personales.estado_civil"/>
+</div><div class="form-group">
+    <label for="numero_hijos">numero_hijos</label>
+    <input readonly id="numero_hijos" type="text" class="form-control" name="numero_hijos" size="30" value="$aspectos_personales.numero_hijos"/>
+</div><div class="form-group">
+    <label for="quien_los_cuida">quien_los_cuida</label>
+    <input readonly id="quien_los_cuida" type="text" class="form-control" name="quien_los_cuida" size="30" value="$aspectos_personales.quien_los_cuida"/>
+</div><div class="form-group">
+    <label for="no_integrantes_familia">no_integrantes_familia</label>
+    <input readonly id="no_integrantes_familia" type="text" class="form-control" name="no_integrantes_familia" size="30" value="$aspectos_personales.no_integrantes_familia"/>
+</div><div class="form-group">
+    <label for="comunicacion_familiar">comunicacion_familiar</label>
+    <input readonly id="comunicacion_familiar" type="text" class="form-control" name="comunicacion_familiar" size="30" value="$aspectos_personales.comunicacion_familiar"/>
+</div><div class="form-group">
+    <label for="responsable">responsable</label>
+    <input readonly id="responsable" type="text" class="form-control" name="responsable" size="30" value="$aspectos_personales.responsable"/>
+</div><div class="form-group">
+    <label for="respetuosa">respetuosa</label>
+    <input readonly id="respetuosa" type="text" class="form-control" name="respetuosa" size="30" value="$aspectos_personales.respetuosa"/>
+</div><div class="form-group">
+    <label for="trabajo_equipo">trabajo_equipo</label>
+    <input readonly id="trabajo_equipo" type="text" class="form-control" name="trabajo_equipo" size="30" value="$aspectos_personales.trabajo_equipo"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

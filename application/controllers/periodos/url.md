@@ -1,0 +1,5 @@
+'/periodos', 'application.controllers.periodos.index.Index',
+'/periodos/view/(.+)', 'application.controllers.periodos.view.View',
+'/periodos/edit/(.+)', 'application.controllers.periodos.edit.Edit',
+'/periodos/delete/(.+)', 'application.controllers.periodos.delete.Delete',
+'/periodos/insert', 'application.controllers.periodos.insert.Insert',

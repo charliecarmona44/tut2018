@@ -1,0 +1,89 @@
+$def with(alumnos, message)
+<h3>
+    <a href="/alumnos">alumnos</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+<br>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="email" id="email" value="$alumnos.email" />
+
+    <div class="form-group">
+    <label for="id_grupo">id_grupo</label>
+    <input readonly id="id_grupo" type="text" class="form-control" name="id_grupo" size="30" value="$alumnos.id_grupo"/>
+</div><div class="form-group">
+    <label for="id_clase">id_clase</label>
+    <input readonly id="id_clase" type="text" class="form-control" name="id_clase" size="30" value="$alumnos.id_clase"/>
+</div><div class="form-group">
+    <label for="fecha_alta">fecha_alta</label>
+    <input readonly id="fecha_alta" type="text" class="form-control" name="fecha_alta" size="30" value="$alumnos.fecha_alta"/>
+</div><div class="form-group">
+    <label for="nombre">nombre</label>
+    <input readonly id="nombre" type="text" class="form-control" name="nombre" size="30" value="$alumnos.nombre"/>
+</div><div class="form-group">
+    <label for="ap_paterno">ap_paterno</label>
+    <input readonly id="ap_paterno" type="text" class="form-control" name="ap_paterno" size="30" value="$alumnos.ap_paterno"/>
+</div><div class="form-group">
+    <label for="ap_materno">ap_materno</label>
+    <input readonly id="ap_materno" type="text" class="form-control" name="ap_materno" size="30" value="$alumnos.ap_materno"/>
+</div><div class="form-group">
+    <label for="fecha_nacimiento">fecha_nacimiento</label>
+    <input readonly id="fecha_nacimiento" type="text" class="form-control" name="fecha_nacimiento" size="30" value="$alumnos.fecha_nacimiento"/>
+</div><div class="form-group">
+    <label for="curp">curp</label>
+    <input readonly id="curp" type="text" class="form-control" name="curp" size="30" value="$alumnos.curp"/>
+</div><div class="form-group">
+    <label for="cuatrimestre">cuatrimestre</label>
+    <input readonly id="cuatrimestre" type="text" class="form-control" name="cuatrimestre" size="30" value="$alumnos.cuatrimestre"/>
+</div><div class="form-group">
+    <label for="telefono_celular">telefono_celular</label>
+    <input readonly id="telefono_celular" type="text" class="form-control" name="telefono_celular" size="30" value="$alumnos.telefono_celular"/>
+</div><div class="form-group">
+    <label for="telefono_casa">telefono_casa</label>
+    <input readonly id="telefono_casa" type="text" class="form-control" name="telefono_casa" size="30" value="$alumnos.telefono_casa"/>
+</div><div class="form-group">
+    <label for="email_institucional">email_institucional</label>
+    <input readonly id="email_institucional" type="text" class="form-control" name="email_institucional" size="30" value="$alumnos.email_institucional"/>
+</div><div class="form-group">
+    <label for="email_personal">email_personal</label>
+    <input readonly id="email_personal" type="text" class="form-control" name="email_personal" size="30" value="$alumnos.email_personal"/>
+</div><div class="form-group">
+    <label for="calle">calle</label>
+    <input readonly id="calle" type="text" class="form-control" name="calle" size="30" value="$alumnos.calle"/>
+</div><div class="form-group">
+    <label for="colonia">colonia</label>
+    <input readonly id="colonia" type="text" class="form-control" name="colonia" size="30" value="$alumnos.colonia"/>
+</div><div class="form-group">
+    <label for="cp">cp</label>
+    <input readonly id="cp" type="text" class="form-control" name="cp" size="30" value="$alumnos.cp"/>
+</div><div class="form-group">
+    <label for="no_exterior">no_exterior</label>
+    <input readonly id="no_exterior" type="text" class="form-control" name="no_exterior" size="30" value="$alumnos.no_exterior"/>
+</div><div class="form-group">
+    <label for="no_interior">no_interior</label>
+    <input readonly id="no_interior" type="text" class="form-control" name="no_interior" size="30" value="$alumnos.no_interior"/>
+</div><div class="form-group">
+    <label for="municipio">municipio</label>
+    <input readonly id="municipio" type="text" class="form-control" name="municipio" size="30" value="$alumnos.municipio"/>
+</div><div class="form-group">
+    <label for="referencias">referencias</label>
+    <input readonly id="referencias" type="text" class="form-control" name="referencias" size="30" value="$alumnos.referencias"/>
+</div><div class="form-group">
+    <label for="idioma_principal">idioma_principal</label>
+    <input readonly id="idioma_principal" type="text" class="form-control" name="idioma_principal" size="30" value="$alumnos.idioma_principal"/>
+</div><div class="form-group">
+    <label for="segundo_idioma">segundo_idioma</label>
+    <input readonly id="segundo_idioma" type="text" class="form-control" name="segundo_idioma" size="30" value="$alumnos.segundo_idioma"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

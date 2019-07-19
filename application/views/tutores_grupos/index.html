@@ -1,0 +1,23 @@
+$def with(tutores_grupos)
+<h3>
+    <a href="/tutores_grupos">Asignación tutores grupos</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>tutores grupos</th>
+        <th>grupos-periodos</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        $for item in tutores_grupos:
+        <tr>
+            <td><a href='/tutores_grupos/view/$item.user'>Tutor: $item.name</a></td>
+            <td><a href='/tutores_grupos/view/$item.user'>Grupo-periodo: $item.grupo</a></td>
+            <td><a href='/tutores_grupos/edit/$item.id_tutor_grupo'><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href='/tutores_grupos/delete/$item.id_tutor_grupo'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

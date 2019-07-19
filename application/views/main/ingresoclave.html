@@ -1,0 +1,24 @@
+$def with(message)
+$var privilege: 3
+<center>
+  <h1> Ingresa a Registo UTEC</h1>
+</center>
+<center>
+ <img src="static/imagen/logoingreso.png" width="150" height="150" align="middle"> 
+</center>
+$if message != None:
+    <div class="alert alert-danger">
+	<strong>Error:</strong> $message
+    </div>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+            <label>Ingresa la clave de tu grupo:</label>
+            <input required id="clave_grupo" type="text" class="form-control" name="clave_grupo" size="30"/>
+    </div>
+    
+    <div class="form-group">
+            <label></label>
+            <button id="ingresoclave" name="Login" class="form-control"><span class="glyphicon glyphicon-log-in"></span> Entrar al sistema de registro</button>
+    </div>
+</form>

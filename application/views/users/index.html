@@ -1,0 +1,46 @@
+$def with(users)
+<h3>
+    <a href="/users">Users</a>
+</h3>
+<a href="/users/printer"><span class="glyphicon glyphicon-print"></span>Print version</a>
+
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>User</th>
+        <th>User</th>
+        <th>Status</th>
+        <th>Privilege</th>
+        <th>Updated</th>
+        <th>Options</th>
+    </thead>
+    <tbody>
+        $for item in users:
+        <tr>
+            <td><a href='/users/view/$item.user'>$item.name</a></td>
+            <td><a href='/users/view/$item.user'>$item.user.split('!')[0]</a></td>
+            $if item.status == 0:
+                <td>Disabled</td>
+            $else:
+                <td>Enabled</td>
+
+            $if item.privilege == 0:
+                <td>Admin</td>
+            $if item.privilege ==1:
+                <td>Tutor</td>
+            $if item.privilege ==2:
+                <td>Especialista en tutoria</td>
+            $if item.privilege ==5:
+                <td>guess</td>
+            <td>$item.created</td>
+            <td>
+                <a href='/users/edit/$item.user'><span class="glyphicon glyphicon-pencil"></span></a>
+                <a href='/users/delete/$item.user'><span class="glyphicon glyphicon-trash"></span></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<center>
+ <img src="static/imagen/utec.jpg" width="195" height="150" align="middle"> 
+</center>
+<br>
+<br>

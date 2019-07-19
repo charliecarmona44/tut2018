@@ -1,0 +1,71 @@
+$def with(padres_tutores, message)
+<h3>
+    <a href="/padres_tutores">padres_tutores</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+<br>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id_padre_tutor" id="id_padre_tutor" value="$padres_tutores.id_padre_tutor" />
+
+    <div class="form-group">
+    <label for="email">email</label>
+    <input readonly id="email" type="text" class="form-control" name="email" size="30" value="$padres_tutores.email"/>
+</div><div class="form-group">
+    <label for="nombre">nombre</label>
+    <input readonly id="nombre" type="text" class="form-control" name="nombre" size="30" value="$padres_tutores.nombre"/>
+</div><div class="form-group">
+    <label for="ap_paterno">ap_paterno</label>
+    <input readonly id="ap_paterno" type="text" class="form-control" name="ap_paterno" size="30" value="$padres_tutores.ap_paterno"/>
+</div><div class="form-group">
+    <label for="ap_materno">ap_materno</label>
+    <input readonly id="ap_materno" type="text" class="form-control" name="ap_materno" size="30" value="$padres_tutores.ap_materno"/>
+</div><div class="form-group">
+    <label for="parentesco">parentesco</label>
+    <input readonly id="parentesco" type="text" class="form-control" name="parentesco" size="30" value="$padres_tutores.parentesco"/>
+</div><div class="form-group">
+    <label for="telefono_celular">telefono_celular</label>
+    <input readonly id="telefono_celular" type="text" class="form-control" name="telefono_celular" size="30" value="$padres_tutores.telefono_celular"/>
+</div><div class="form-group">
+    <label for="telefono_casa">telefono_casa</label>
+    <input readonly id="telefono_casa" type="text" class="form-control" name="telefono_casa" size="30" value="$padres_tutores.telefono_casa"/>
+</div><div class="form-group">
+    <label for="telefono_trabajo">telefono_trabajo</label>
+    <input readonly id="telefono_trabajo" type="text" class="form-control" name="telefono_trabajo" size="30" value="$padres_tutores.telefono_trabajo"/>
+</div><div class="form-group">
+    <label for="email_tutor">email_tutor</label>
+    <input readonly id="email_tutor" type="text" class="form-control" name="email_tutor" size="30" value="$padres_tutores.email_tutor"/>
+</div><div class="form-group">
+    <label for="calle">calle</label>
+    <input readonly id="calle" type="text" class="form-control" name="calle" size="30" value="$padres_tutores.calle"/>
+</div><div class="form-group">
+    <label for="colonia">colonia</label>
+    <input readonly id="colonia" type="text" class="form-control" name="colonia" size="30" value="$padres_tutores.colonia"/>
+</div><div class="form-group">
+    <label for="cp">cp</label>
+    <input readonly id="cp" type="text" class="form-control" name="cp" size="30" value="$padres_tutores.cp"/>
+</div><div class="form-group">
+    <label for="no_exterior">no_exterior</label>
+    <input readonly id="no_exterior" type="text" class="form-control" name="no_exterior" size="30" value="$padres_tutores.no_exterior"/>
+</div><div class="form-group">
+    <label for="no_interior">no_interior</label>
+    <input readonly id="no_interior" type="text" class="form-control" name="no_interior" size="30" value="$padres_tutores.no_interior"/>
+</div><div class="form-group">
+    <label for="municipio">municipio</label>
+    <input readonly id="municipio" type="text" class="form-control" name="municipio" size="30" value="$padres_tutores.municipio"/>
+</div><div class="form-group">
+    <label for="referencias">referencias</label>
+    <input readonly id="referencias" type="text" class="form-control" name="referencias" size="30" value="$padres_tutores.referencias"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

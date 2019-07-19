@@ -1,0 +1,21 @@
+$def with(tutoria_especial)
+<h3>
+    <a href="/tutoria_especial">tutoria especial</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>tutoria especial</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </thead>
+    <tbody>
+        $for item in tutoria_especial:
+        <tr>
+            <td><a href='/tutoria_especial/view/$item.id_tutoria_especial'>Alumno:$item.email || Fecha:$item.fecha || Motivo:$item.motivo_tutoria </a></td>
+            <td><a href='/tutoria_especial/edit/$item.id_tutoria_especial'><span class="glyphicon glyphicon-pencil"></span></a></td>
+            <td><a href='/tutoria_especial/delete/$item.id_tutoria_especial'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>

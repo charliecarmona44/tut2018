@@ -1,0 +1,98 @@
+$def with(alumnos, params, message)
+$var user: $params['email']
+$var privilege: $params['privilege']
+<h3>
+    <a>Edita tu información</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+    <br>
+<form action="" method="post" enctype="multipart/form-data">
+<div class="form-group">
+    <label for="id_grupo">Usuario Registrado</label>
+    <input readonly  type="text" class="form-control" name="email" id="email" value="$alumnos.email" readonly="readonly"/>
+</div>
+
+<div class="form-group" style='display:none;'>
+    <label for="id_grupo">Grupo asignado</label>
+    <input readonly required id="id_grupo" type="text" class="form-control" name="id_grupo" size="30" value="$alumnos.id_grupo" readonly="readonly"/>
+</div>
+
+<div class="form-group">
+    <label for="matricula">Matricula</label>
+    <input readonly required id="matricula" type="text" class="form-control" name="matricula" size="30" value="$alumnos.matricula" readonly="readonly"/>
+</div>
+<div class="form-group" style='display:none;'>
+    <label for="fecha_alta">Fecha Alta</label>
+    <input readonly required id="fecha_alta" type="text" class="form-control" name="fecha_alta" size="30" value="$alumnos.fecha_alta" readonly="readonly"/>
+</div><div class="form-group">
+    <label for="nombre">Nombre</label>
+    <input required id="nombre" type="text" class="form-control" name="nombre" size="30" value="$alumnos.nombre"/>
+</div><div class="form-group">
+    <label for="ap_paterno">Apellido Paterno</label>
+    <input required id="ap_paterno" type="text" class="form-control" name="ap_paterno" size="30" value="$alumnos.ap_paterno"/>
+</div><div class="form-group">
+    <label for="ap_materno">Apellido Materno</label>
+    <input required id="ap_materno" type="text" class="form-control" name="ap_materno" size="30" value="$alumnos.ap_materno"/>
+</div><div class="form-group">
+    <label for="fecha_nacimiento">Fecha Nacimiento</label>
+    <input required id="fecha_nacimiento" type="text" class="form-control" name="fecha_nacimiento" size="30" value="$alumnos.fecha_nacimiento"/>
+</div><div class="form-group">
+    <label for="curp">Curp</label>
+    <input required id="curp" type="text" class="form-control" name="curp" size="30" value="$alumnos.curp"/>
+</div><div class="form-group">
+    <label readonly for="cuatrimestre">Cuatrimestre</label>
+    <input required id="cuatrimestre" type="text" class="form-control" name="cuatrimestre" size="30" value="$alumnos.cuatrimestre" readonly="readonly"/>
+</div><div class="form-group">
+    <label for="telefono_celular">Telefono Celular</label>
+    <input required id="telefono_celular" type="text" class="form-control" name="telefono_celular" size="30" value="$alumnos.telefono_celular"/>
+</div><div class="form-group">
+    <label for="telefono_casa">Telefono Casa</label>
+    <input required id="telefono_casa" type="text" class="form-control" name="telefono_casa" size="30" value="$alumnos.telefono_casa"/>
+</div><div class="form-group">
+    <label for="email_institucional">Email Instituciónal</label>
+    <input required id="email_institucional" type="text" class="form-control" name="email_institucional" size="30" value="$alumnos.email_institucional"/>
+</div>
+<div class="form-group">
+    <label for="email_personal">Email Personal</label>
+    <input required id="email_personal" type="text" class="form-control" name="email_personal" size="30" value="$alumnos.email_personal"/>
+</div>
+<div class="form-group">
+    <label for="calle">Calle</label>
+    <input required id="calle" type="text" class="form-control" name="calle" size="30" value="$alumnos.calle"/>
+</div><div class="form-group">
+    <label for="colonia">Colonia</label>
+    <input required id="colonia" type="text" class="form-control" name="colonia" size="30" value="$alumnos.colonia"/>
+</div><div class="form-group">
+    <label for="cp">Codigo Postal</label>
+    <input required id="cp" type="text" class="form-control" name="cp" size="30" value="$alumnos.cp"/>
+</div><div class="form-group">
+    <label for="no_exterior">No Exterior</label>
+    <input required id="no_exterior" type="text" class="form-control" name="no_exterior" size="30" value="$alumnos.no_exterior"/>
+</div><div class="form-group">
+    <label for="no_interior">No Interior</label>
+    <input required id="no_interior" type="text" class="form-control" name="no_interior" size="30" value="$alumnos.no_interior"/>
+</div><div class="form-group">
+    <label for="municipio">Municipio</label>
+    <input required id="municipio" type="text" class="form-control" name="municipio" size="30" value="$alumnos.municipio"/>
+</div><div class="form-group">
+    <label for="referencias">Referencias</label>
+    <input required id="referencias" type="text" class="form-control" name="referencias" size="30" value="$alumnos.referencias"/>
+</div><div class="form-group">
+    <label for="idioma_principal">Idioma Principal</label>
+    <input required id="idioma_principal" type="text" class="form-control" name="idioma_principal" size="30" value="$alumnos.idioma_principal"/>
+</div><div class="form-group">
+    <label for="segundo_idioma">Segundo Idioma</label>
+    <input required id="segundo_idioma" type="text" class="form-control" name="segundo_idioma" size="30" value="$alumnos.segundo_idioma"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-pencil"></span> Edit</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

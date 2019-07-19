@@ -1,0 +1,5 @@
+'/padres_tutores', 'application.controllers.padres_tutores.index.Index',
+'/padres_tutores/view/(.+)', 'application.controllers.padres_tutores.view.View',
+'/padres_tutores/edit/(.+)', 'application.controllers.padres_tutores.edit.Edit',
+'/padres_tutores/delete/(.+)', 'application.controllers.padres_tutores.delete.Delete',
+'/padres_tutores/insert', 'application.controllers.padres_tutores.insert.Insert',

@@ -1,0 +1,35 @@
+$def with(observaciones_individuales)
+<h3>
+    <a href="/observaciones_individuales">Observaciones individuales</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>Matricula</th>
+        <th>Nombre</th>
+        <th>Grupo</th>
+        <th>Fecha</th>
+        <th>Semáforo</th>
+        <th>Opciones</th>
+    </thead>
+    <tbody>
+        $for item in observaciones_individuales:
+        <tr>
+            <td><a href='/observaciones_individuales/view/$item.id_observacion_individual'>$item.email</a></td>
+            <td><a href='/observaciones_individuales/view/$item.id_observacion_individual'>$item.nombre</a></td>
+            <td><a href='/observaciones_individuales/view/$item.id_observacion_individual'>$item.grupo</a></td>
+            <td><a href='/observaciones_individuales/view/$item.id_observacion_individual'>$item.fecha_observaciones</a></td>
+            $if item.semaforo == 'verde':
+                <td><a href='/observaciones_individuales/view/$item.id_observacion_individual'><span class="glyphicon glyphicon-exclamation-sign" style="color:green"></span>Verde</a></td>
+            $elif item.semaforo == 'amarillo':
+                <td><a href='/observaciones_individuales/view/$item.id_observacion_individual'><span class="glyphicon glyphicon-exclamation-sign" style="color:yellow"></span>Amarillo</a></td>
+            $elif item.semaforo == 'rojo':
+                <td><a href='/observaciones_individuales/view/$item.id_observacion_individual'><span class="glyphicon glyphicon-exclamation-sign" style="color:red">Rojo</span></a></td>
+
+            <td><a href='/observaciones_individuales/edit/$item.id_observacion_individual'><span class="glyphicon glyphicon-pencil"></span></a>  
+            <a href='/observaciones_individuales/delete/$item.id_observacion_individual'><span class="glyphicon glyphicon-trash"></span></a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<br>

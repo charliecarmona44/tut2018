@@ -1,0 +1,26 @@
+$def with(programas_educativos, message)
+<h3>
+    <a href="/programas_educativos">programas educativos</a>
+</h3>
+$if message != None:
+    <div class="alert alert-warning">
+        <strong>Advertencia </strong> $message
+    </div>
+<br>
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id_programa_educativo" id="id_programa_educativo" value="$programas_educativos.id_programa_educativo" />
+
+    <div class="form-group">
+    <label for="programa">programa</label>
+    <input readonly id="programa" type="text" class="form-control" name="programa" size="30" value="$programas_educativos.programa"/>
+</div>
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+    </div>
+</form>
+<br>
+<br>
+<br>

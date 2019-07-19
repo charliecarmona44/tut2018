@@ -1,0 +1,31 @@
+$def with(tutores,grupos)
+<h3>
+    <a href="/tutores_grupos">tutores_grupos</a>
+</h3>
+<form action="" method="post" enctype="multipart/form-data">
+
+    <div class="form-group">
+    <label>Tutores</label>
+    <select name="user" class="form-control">
+         $for item in tutores:
+             <option value=$item.user>$item.name</option>
+   </select>
+   </div>
+   
+   <div class="form-group">
+    <label>Grupos</label>
+    <select name="id_grupo" class="form-control">
+         $for item in grupos:
+             <option value=$item.id_grupo>$item.grupo</option>
+   </select>
+   </div>
+ 
+
+
+    <div class="form-group">
+        <label></label>
+        <button id="send" name="send" class="form-control"><span class="glyphicon glyphicon-save"></span> Save</button>
+    </div>
+</form>
+<br>
+<br>

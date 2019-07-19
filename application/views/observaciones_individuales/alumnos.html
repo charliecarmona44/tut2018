@@ -1,0 +1,21 @@
+$def with(alumnos)
+<h3>
+    <a href="/alumnos">Alumnos</a>
+</h3>
+<table id="datos_tabla" class="table table-hover" cellspacing="0" width="100%">
+    <thead>
+        <th>Matricula</th>
+        <th>Nombre</th>
+        <th>Grupo</th>
+    </thead>
+    <tbody>
+        $for item in alumnos:
+        <tr>
+            <td><a href='/observaciones_individuales/insert/$item.email'>$item.email.split('!')[0]</a></td>
+            <td><a href='/observaciones_individuales/insert/$item.email'>$item.nombre</a></td>
+            <td><a href='/observaciones_individuales/insert/$item.email'>$item.grupo</a></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
